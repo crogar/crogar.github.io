@@ -1,33 +1,125 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Activity 1: Basic HTML Bio</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="'./css/main_base.css">
+    <link rel="stylesheet" href="./css/blocks.css">
+    <link rel="stylesheet" href="./css/buttons_.css">
+    <link rel="stylesheet" href="./css/profile_.css">
 </head>
-
 <body>
-<h1>JICH</h1>
-<main>
-  <div class="container-bio">
-  <img class="box-img" src="./images/me.png" width="300px" height="300px">
-  <section class="presentation-bio">
-    <h2>Mechatronics Engineer</h2>
-    <p>
-      As a Mechatronics Engineer I have developed a wide perspective of engineering. I've worked in the electrical,
-       robotic and programming aspects of the multidisciplinary career that is Mechatronics.</p>
-       <h2>Controls Engineer</h2>
-      <p>  I have worked as an Electrical Controls Engineer in the material handling industry, I posses a strong knowledge in automation,
-        especially in the Allen Bradley Ecosystem. Proficient in designing, creating and implementing ladder logic programs on complex
-        material-handling projects.</p>
+    <div class="video-container">
+           <video autoplay loop muted id="video-bg">
+            <source src="./images/video/473287184.mp4" type="video/mp4">
+           </video>
+    </div>
+    <nav>
+       <div class="navbar-container">
+            <center>
+                 <div class="nav-box">
+                    <div class="Presentation">
+                         <div class="name">
+                             <p> <span>Juan Ignacio</span>  <span class="lastname" style="color: #1a508b">Castaneda</span> </p>
+                             <p>Mechatronics Engineer </p>
+                         </div>
+                         <div class="image-profile">
+                             <img class="face" src="./images/image3217.png">
+                        </div>
+                    </div>
+                     <div class="other-element">
+                        <h2></h2>
+                     </div>
+             </div>
+            </center>
 
-        <ul>
-          <li><strong>Email:</strong> <a href="#">jich24@gmail.com</a></li>
-          <li><strong>Github:</strong> <a href="#">crogar_github</a></li>
-          <li><strong>Linkedin:</strong> <a href="#">Linkedin</a></li>
-        </ul>
-  </section>
-  </div>
-</main>
+             <hr class="solid">
+            <div class="menu">
+                 <ul class="nav-links">
+                     <li >
+                         <a class="nav-link" href="{% url 'index' %}">
+                             <div class="demo-solution demo-solution--flexbox">
+                              <img src="https://img.icons8.com/nolan/64/home-page.png" width="30" height="30">
+                               <span class="text-demo">Home</span>
+                             </div>
+
+                         </a>
+                     </li>
+                     <li >
+                         <a class="nav-link" href="{% url 'biography' %}">
+                             <div class="demo-solution demo-solution--flexbox">
+                                 <img src="https://img.icons8.com/nolan/64/person-male.png" width="30" height="30"/>
+                               <span class="text-demo">Biography</span>
+                             </div>
+                         </a>
+                     </li>
+                     <li >
+                         <a class="nav-link" href="{% url 'portfolio' %}">
+                             <div class="demo-solution demo-solution--flexbox">
+                               <img src="https://img.icons8.com/nolan/64/moleskine.png" width="30" height="30">
+                               <span class="text-demo">Portfolio</span>
+                             </div>
+
+                         </a>
+                     </li>
+                     <li >
+                         <a class="nav-link" href="{% url 'resume' %}">
+                             <div class="demo-solution demo-solution--flexbox">
+                               <img src="https://img.icons8.com/nolan/64/resume.png" width="30" height="30"/>
+                               <span class="text-demo">Resume</span>
+                             </div>
+                         </a>
+                     </li>
+                 </ul>
+            </div>
+
+       </div>
+
+    </nav>
+
+
+    <center><img class='top2' src="./images/bar-horizontal1.svg"></center>
+
+    <!-- Wi will extend the content here  -->
+       <div class="container">
+        {% block body_block %}
+            <!--        Here goes the inherited content-->
+        {%endblock%}
+       </div>
+
+
+
 </body>
+<!--    footer-->
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h1 class="logo-text"> <span>JICH</span> in the never-ending journey</h1>
+                <p>This website was created by me, to show and share my work and document my journey in the great
+                    world of programming and code</p>
+                <div class="contact">
+                    <div class="demo-solution demo-solution--flexbox">
+                        <img src="https://img.icons8.com/ultraviolet/40/000000/phone-office.png" width="30" height="30">
+                        <span class="text-demo">202-738-9084</span>
+                    </div>
+                    <div class="demo-solution demo-solution--flexbox">
+                        <img src="https://img.icons8.com/office/16/000000/email.png" width="30" height="30">
+                        <span class="text-demo">ing.juancastaneda@gmail.com</span>
+                    </div>
+                </div>
 
+            </div>
+            <div class="footer-section links">
+
+            </div>
+            <div class="footer-section contact-form">
+
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; myjourneyinthecode.com | Designed by Juan Ignacio Castaneda
+        </div>
+    </div>
+<!--end footer-->
 </html>
