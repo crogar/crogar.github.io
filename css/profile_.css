@@ -1,0 +1,63 @@
+.container-bio {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.presentation{
+    height: 70%;
+}
+.bg-img{
+    margin: 0;
+    padding: 0;
+    background: url("https://scontent-iad3-1.xx.fbcdn.net/v/t31.0-8/15936477_1854062011472121_1026551553608281901_o.jpg?_nc_cat=103&ccb=3&_nc_sid=e3f864&_nc_ohc=eilj-oCQ678AX8tgfRp&_nc_ht=scontent-iad3-1.xx&oh=657efd6ab9c5dbf764d84d622f0629b6&oe=60480168") no-repeat;
+
+}
+.separator-2{
+    height: 15%;
+}
+.box{
+    margin-top: 100px;
+    width: 60%;
+    background: rgba(35, 104, 155, 0.4);
+    text-align: center;
+    margin: auto;
+    color: white;
+}
+.box-text{
+    margin: auto;
+    width: 80%;
+}
+
+.box-img{
+    margin-top: 5%;
+    border-radius: 50%
+    width: 2vw;
+
+}
+.box h1{
+    font-size: 4.5vw;
+    letter-spacing: 4px;
+    font-weight: 100;
+}
+.box h5{
+    font-size: 2em;
+    letter-spacing: 3px;
+    font-weight: 100;
+}
+
+.box p{
+    text-align: justify;
+    font-size: 1.6em;
+}

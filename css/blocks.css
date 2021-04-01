@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap');
+main{
+font-family: 'Ropa Sans', sans-serif;
+}
+
+main .main-h1{
+    font-size: 2.2vw;
+}
+.presentation-main{
+
+	width: 90%;
+	margin: auto;
+	margin-top: 2%;
+	border: 1px solid white;
+	color: gray;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+
+.container-static{
+    display: flex;
+    width: 85%;
+    padding-top: 0;
+    /*border: 1px solid blue;*/
+    margin: auto;
+}
+
+.grid-elements{
+    flex: 1;
+    display: flex;
+    text-align: center;
+    padding-top:0px;
+    /*border: 1px solid red;*/
+}
+
+.grid-element{
+    flex: 1;
+    padding-top:35px;
+    margin: 0;
+    animation: drop 1.4s ease-in-out;
+}
+
+
+.grid-text{
+    text-align: center;
+    text-justify: inter-word;
+    margin: auto;
+    width:85%;
+    font-size: 2vh;
+    margin-top: 3%;
+    justify-content: center;
+}
+.grid-element img{
+    width: 6vw;
+    min-width = 100px;
+    margin: auto;
+}
+
+.grid-element h1{
+    font-size: 2em;
+}
+
+@keyframes drop{
+	0%{
+		opacity:0;
+		transform: translateY(-80px);
+	}
+	100%{
+		opacity:1;
+		transform: translateY(0px);
+	}
+}
+
+@media screen and (max-width:1024px){
+    .grid-elements{
+        flex-direction: column;
+    }
+    .container-static{
+        flex-direction: column;
+    }
+
+    .grid-text{
+        font-size: 1em;
+    }
+    .grid-element img{
+    width: 150px;
+    min-width = 150px;
+    margin: auto;
+}
+}
+
