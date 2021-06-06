@@ -1,3 +1,13 @@
+:root{
+    font-size: 16px;
+    font-family: 'Open Sans';
+    --text-primary: #b6b6b6;
+    --text-secondary: #ececec;
+    --bg-primary: #23232e;
+    --bg-secondary: #141418;
+    --transition-speed: 600ms;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap');
 main{
 font-family: 'Ropa Sans', sans-serif;
