@@ -1,143 +1,93 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Home</title>
 
-    <link rel="stylesheet" href="./css/main_base.css">
-    <link rel="stylesheet" href="./css/blocks.css">
-    <link rel="stylesheet" href="./css/buttons_.css">
-    <link rel="stylesheet" href="./css/profile_.css">
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin="" />
+
+  <!-- Our CSS -->
+  <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+  <!-- JQuery Minized -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <!-- Plotly Minimized -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <!-- light chart -->
+  <script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
 </head>
+
 <body>
-    <div class="video-container">
-           <video autoplay loop muted id="video-bg">
-            <source src="./images/video/473287184.mp4" type="video/mp4">
-           </video>
+  <nav class="navbar">
+    <ul class="navbar-nav">
+      <li class="logo">
+        <a href="#" class="nav-link">
+          <span class="link-text logo-text">Covid19 Maryland</span>
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="fad"
+            data-icon="angle-double-right"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+            class="svg-inline--fa fa-angle-double-right fa-w-14 fa-5x"
+          >
+            <g class="fa-group">
+              <path
+                fill="currentColor"
+                d="M224 273L88.37 409a23.78 23.78 0 0 1-33.8 0L32 386.36a23.94 23.94 0 0 1 0-33.89l96.13-96.37L32 159.73a23.94 23.94 0 0 1 0-33.89l22.44-22.79a23.78 23.78 0 0 1 33.8 0L223.88 239a23.94 23.94 0 0 1 .1 34z"
+                class="fa-secondary"
+              ></path>
+              <path
+                fill="currentColor"
+                d="M415.89 273L280.34 409a23.77 23.77 0 0 1-33.79 0L224 386.26a23.94 23.94 0 0 1 0-33.89L320.11 256l-96-96.47a23.94 23.94 0 0 1 0-33.89l22.52-22.59a23.77 23.77 0 0 1 33.79 0L416 239a24 24 0 0 1-.11 34z"
+                class="fa-primary"
+              ></path>
+            </g>
+          </svg>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="" class="nav-link">
+          <img src="/static/images/dashboard.png" alt="" width="50px" height="50px">
+          <span class="link-text">Dasboard</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="/datasets" class="nav-link">  
+          <img src="/static/images/data.png" alt="" width="50px" height="50px">
+          <span class="link-text">Data Summary</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <main>
+    <div class="container">
+      <div class="dashboard">
+        <div class="dashboard-header">
+          <h1>Who is JICH?</h1>
+        </div>
+        <div class="col"></div>
+      </div>
     </div>
-    <nav>
-       <div class="navbar-container">
-            <center>
-                 <div class="nav-box">
-                    <div class="Presentation">
-                         <div class="name">
-                             <p> <span>Juan Ignacio</span>  <span class="lastname" style="color: #1a508b">Castaneda</span> </p>
-                             <p>Mechatronics Engineer </p>
-                         </div>
-                         <div class="image-profile">
-                             <img class="face" src="./images/image3217.png">
-                        </div>
-                    </div>
-                     <div class="other-element">
-                        <h2></h2>
-                     </div>
-             </div>
-            </center>
+    <div class="filler"></div>
+  </main>
 
-             <hr class="solid">
-            <div class="menu">
-                 <ul class="nav-links">
-                     <li >
-                         <a class="nav-link" href="{% url 'index' %}">
-                             <div class="demo-solution demo-solution--flexbox">
-                              <img src="https://img.icons8.com/nolan/64/home-page.png" width="30" height="30">
-                               <span class="text-demo">Home</span>
-                             </div>
-
-                         </a>
-                     </li>
-                     <li >
-                         <a class="nav-link" href="{% url 'biography' %}">
-                             <div class="demo-solution demo-solution--flexbox">
-                                 <img src="https://img.icons8.com/nolan/64/person-male.png" width="30" height="30"/>
-                               <span class="text-demo">Biography</span>
-                             </div>
-                         </a>
-                     </li>
-                     <li >
-                         <a class="nav-link" href="{% url 'portfolio' %}">
-                             <div class="demo-solution demo-solution--flexbox">
-                               <img src="https://img.icons8.com/nolan/64/moleskine.png" width="30" height="30">
-                               <span class="text-demo">Portfolio</span>
-                             </div>
-
-                         </a>
-                     </li>
-                     <li >
-                         <a class="nav-link" href="{% url 'resume' %}">
-                             <div class="demo-solution demo-solution--flexbox">
-                               <img src="https://img.icons8.com/nolan/64/resume.png" width="30" height="30"/>
-                               <span class="text-demo">Resume</span>
-                             </div>
-                         </a>
-                     </li>
-                 </ul>
-            </div>
-
-       </div>
-
-    </nav>
-
-
-    <center><img class='top2' src="./images/bar-horizontal1.svg"></center>
-
-    <!-- Wi will extend the content here  -->
-       <div class="container">
-         <h1>JICH</h1>
-<main>
- <div class="container-bio">
- <img class="box-img" src="./images/me.png" width="300px" height="300px">
- <section class="presentation-bio">
-   <h2>Mechatronics Engineer</h2>
-   <p>
-     As a Mechatronics Engineer I have developed a wide perspective of engineering. I've worked in the electrical,
-      robotic and programming aspects of the multidisciplinary career that is Mechatronics.</p>
-      <h2>Controls Engineer</h2>
-     <p>  I have worked as an Electrical Controls Engineer in the material handling industry, I posses a strong knowledge in automation,
-       especially in the Allen Bradley Ecosystem. Proficient in designing, creating and implementing ladder logic programs on complex
-       material-handling projects.</p>
-       <ul>
-         <li><strong>Email:</strong> <a href="#">jich24@gmail.com</a></li>
-         <li><strong>Github:</strong> <a href="#">crogar_github</a></li>
-         <li><strong>Linkedin:</strong> <a href="#">Linkedin</a></li>
-       </ul>
- </section>
- </div>
-</main>
-       </div>
-
-
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""></script>
+  <!-- D3 JavaScript -->
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <!-- Plotly -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
 </body>
-<!--    footer-->
-    <div class="footer">
-        <div class="footer-content">
-            <div class="footer-section about">
-                <h1 class="logo-text"> <span>JICH</span> in the never-ending journey</h1>
-                <p>This website was created by me, to show and share my work and document my journey in the great
-                    world of programming and code</p>
-                <div class="contact">
-                    <div class="demo-solution demo-solution--flexbox">
-                        <img src="https://img.icons8.com/ultraviolet/40/000000/phone-office.png" width="30" height="30">
-                        <span class="text-demo">202-738-9084</span>
-                    </div>
-                    <div class="demo-solution demo-solution--flexbox">
-                        <img src="https://img.icons8.com/office/16/000000/email.png" width="30" height="30">
-                        <span class="text-demo">ing.juancastaneda@gmail.com</span>
-                    </div>
-                </div>
 
-            </div>
-            <div class="footer-section links">
-
-            </div>
-            <div class="footer-section contact-form">
-
-            </div>
-        </div>
-        <div class="footer-bottom">
-            &copy; myjourneyinthecode.com | Designed by Juan Ignacio Castaneda
-        </div>
-    </div>
-<!--end footer-->
 </html>
