@@ -140,7 +140,7 @@ main{
 }
 
 .dashboard-header{
-    background-color: whitesmoke;
+    background-color: white;
     color: var(--bg-secondary);
     border-radius: 5px;
     width: 100%;
@@ -160,6 +160,7 @@ main{
 
 .dashboard{
     margin:auto;
+    margin-top:1%;
 }
 .comparison{
     margin-top: 20px;
@@ -176,7 +177,7 @@ main{
 .col{
     padding: 5px;
     border-radius: 2px;
-    background-color: whitesmoke;
+    background-color: white;
     border-radius: 4px;
     color: var(--bg-secondary);
 }
