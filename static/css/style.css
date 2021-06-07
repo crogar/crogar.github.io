@@ -117,11 +117,25 @@ main{
     transform: rotate(-180deg);
   }
 
+  /* video style */
+
+    video {
+        object-fit: cover;
+        width: 100vw;
+        height: 100vh;
+        z-index: -1;
+        position: fixed;
+        top: 0;
+        left: 0;
+      }
+
+  /* end video style */
+
   .container{
     margin:auto;
     margin-left: 2%;
     margin-right: 2%;
-    margin-top: 2%;
+    margin-top: 5%;
     padding: 1px 10px 10px 10px;
     border-radius: 5px;
     box-shadow: -3px 2px 8px 4px rgba(56,40,40,0.59);
