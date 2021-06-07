@@ -120,11 +120,12 @@ main{
   /* video style */
   .video-container{
       padding: 0;
+      background-color: #04576b;
   }
     video {
         object-fit: cover;
         width: 100%;
-        height: 200px;
+        height: 20vh;
       }
 
   /* end video style */
@@ -133,7 +134,7 @@ main{
     margin:auto;
     margin-left: 2%;
     margin-right: 2%;
-    margin-top: 5%;
+    margin-top: 1%;
     padding: 1px 10px 10px 10px;
     border-radius: 5px;
     box-shadow: -3px 2px 8px 4px rgba(56,40,40,0.59);
