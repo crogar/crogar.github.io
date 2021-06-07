@@ -60,6 +60,7 @@ main .main-h1{
     font-size: 2vh;
     margin-top: 3%;
     justify-content: center;
+    color: var(--text-primary);
 }
 .grid-element img{
     width: 6vw;
@@ -69,6 +70,7 @@ main .main-h1{
 
 .grid-element h1{
     font-size: 2em;
+    color: gray;
 }
 
 @keyframes drop{

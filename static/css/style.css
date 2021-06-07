@@ -56,7 +56,7 @@ main{
 }
 
 .nav-link{
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
     display: flex;
     align-items: center;
     height: 5rem;
