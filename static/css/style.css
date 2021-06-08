@@ -177,7 +177,6 @@ main{
     padding-left: 20%;
     justify-content: center; /* align horizontal */
     align-items: center; /* align vertical */
-    height: auto;
     float: right;
     /*border: 1px solid white;*/
 }
@@ -186,7 +185,8 @@ main{
 }
 
 .face{
-    width:7vw;
+    width:10vw;
+    max-height: 20vh;
     min-width: 50px;
     margin:0;
     padding:0;
