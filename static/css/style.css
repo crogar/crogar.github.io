@@ -118,17 +118,39 @@ main{
   }
 
   /* video style */
+  .video-presentation{
+    position: relative;
+    width: 100%;
+    height: 20vh;
+  }
   .video-container{
       padding: 0;
       background-color: #04576b;
+       width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
   }
     video {
         object-fit: cover;
         width: 100%;
         height: 20vh;
+        z-index: 0;
       }
-
   /* end video style */
+
+  /* presentation  */
+  .nav-box{
+    align-items: center;
+    position: relative;
+    /* display: flex; */
+    font-family: 'Ropa Sans', sans-serif;
+    z-index: 10;
+    width:100%;
+    float:inherit;
+}
+  /* end presentation */
 
   .container{
     margin:auto;
