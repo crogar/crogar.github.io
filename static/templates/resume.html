@@ -13,9 +13,6 @@
 	<!-- JQuery Minized -->
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
 		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-	<!-- Custom Elements with Built-in Extends polyfill for Safari -->
-	<script src="https://unpkg.com/@ungap/custom-elements-builtin"></script>
-
 </head>
 
 <body>
@@ -93,7 +90,9 @@
 					<center><img class='top2' src="../../images/bar-horizontal.svg"></center>
 
 					<div class="container-static">
-						<iframe src='https://zety.com/profile/juan-castaneda' style="border: none;width: 100%; min-height: 83vh;"></iframe>
+						<iframe is="x-frame-bypass" src="https://zety.com/profile/juan-castaneda" style="border: none;width: 100%; min-height: 83vh;"></iframe>
+
+						<!-- <iframe src='https://zety.com/profile/juan-castaneda' style="border: none;width: 100%; min-height: 83vh;"></iframe> -->
 					</div>
 
 				</div>
@@ -103,14 +102,11 @@
 		<div class="filler"></div>
 	</main>
 
-	<!-- Leaflet JS -->
-	<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
-		integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
-		crossorigin=""></script>
-	<!-- D3 JavaScript -->
-	<script src="https://d3js.org/d3.v5.min.js"></script>
-	<!-- Plotly -->
-	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+	<!-- Custom Elements with Built-in Extends polyfill for Safari -->
+	<script src="https://unpkg.com/@ungap/custom-elements-builtin"></script>
+	<!-- X-Frame-Bypass JS module -->
+	<script type="module" src="https://unpkg.com/x-frame-bypass"></script>
+	
 
 </body>
 
