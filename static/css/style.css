@@ -369,6 +369,10 @@ main{
         text-align: center;
         font-size: 1em;
     }
+    .navbar:hover .link-text{
+        display: none;
+        transition: opacity var(--transition-speed);
+    }
   }
 
   /* large screens */
@@ -382,7 +386,7 @@ main{
         width: 16rem;
     }
     .navbar:hover .link-text{
-        display: inline;
+        display: none;
         transition: opacity var(--transition-speed);
     }
 }
