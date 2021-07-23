@@ -390,4 +390,11 @@ main{
         transition: opacity var(--transition-speed);
     }
 }
+/* displaying .link-text when max-width > 600px */
+@media only screen and (min-width:601px){
+    .navbar:hover .link-text{
+        display: block;
+        transition: opacity var(--transition-speed);
+    }
+}
 
