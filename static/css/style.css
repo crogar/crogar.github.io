@@ -369,9 +369,6 @@ main{
         text-align: center;
         font-size: 1em;
     }
-    .link-text{
-        visibility: hidden;
-    }
   }
 
   /* large screens */
@@ -387,9 +384,6 @@ main{
     .navbar:hover .link-text{
         display: inline;
         transition: opacity var(--transition-speed);
-    }
-    .link-text{
-        visibility: hidden;
     }
 }
 
