@@ -119,8 +119,8 @@ https://codepen.io/eyupucmaz/pen/oNbeXOb */
   color: #545d7a;
 }
 
-@media only screen and (min-width:601px){
- .card{
-   width: 200px;
- }
-}
+@media only screen and (max-width:480px)  {
+  .card{
+    width: 200px;
+  }
+  }
