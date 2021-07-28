@@ -90,6 +90,12 @@ https://codepen.io/eyupucmaz/pen/oNbeXOb */
 .tag-pink {
   background-color: #cd5b9f;
 }
+.tag-yellow {
+  background-color: #cbd814;
+}
+.tag-js {
+  background-color: #737a05;
+}
 
 .card-body p {
   font-size: 13px;
