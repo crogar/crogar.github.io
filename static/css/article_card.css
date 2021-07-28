@@ -5,10 +5,38 @@ https://codepen.io/eyupucmaz/pen/oNbeXOb */
 * {
   box-sizing: border-box;
 }
+.container-static{
+  width: 100%;
+  margin: auto;
+}
+.main-container {
+  width: 100%;
+  padding: 30px;
+}
+
+
+.heading-container {
+  text-align: center;
+}
+
+.heading {
+  font-weight: 600;
+}
+
+.credit {
+  margin: 10px 0px;
+  color: #888888;
+  font-size: 25px;
+  transition: all 0.5s;
+}
+
+.credit a {
+  color: inherit;
+}
 
 .card-container {
   display: flex;
-  width: 1040px;
+  width: 100%;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
