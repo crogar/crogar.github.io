@@ -10,8 +10,14 @@ https://codepen.io/eyupucmaz/pen/oNbeXOb */
   margin: auto;
 }
 .main-container {
-  width: 100%;
+  width: 99%;
   padding: 30px;
+  margin: auto;
+  border-radius: 2px;
+  box-shadow: -3px 2px 8px 4px rgba(56,40,40,0.59);
+  -webkit-box-shadow: -3px 2px 8px 4px rgba(56,40,40,0.59);
+  -moz-box-shadow: -3px 2px 8px 4px rgba(56,40,40,0.59);
+
 }
 
 
@@ -36,9 +42,11 @@ https://codepen.io/eyupucmaz/pen/oNbeXOb */
 
 .card-container {
   display: flex;
-  width: 100%;
+  margin: auto;
+  width: 85%;
   justify-content: space-evenly;
   flex-wrap: wrap;
+
 }
 .card {
   margin: 10px;
@@ -46,7 +54,8 @@ https://codepen.io/eyupucmaz/pen/oNbeXOb */
   border-radius: 10px;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
   overflow: hidden;
-  width: 300px;
+  width: 20%;
+  min-width: 250px;
 }
 .card-header img {
   width: 100%;
