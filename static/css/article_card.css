@@ -91,13 +91,16 @@ https://codepen.io/eyupucmaz/pen/oNbeXOb */
   background-color: #cd5b9f;
 }
 .tag-python {
-  background-color: #cbd814;
+  background-color: #bbc902;
 }
 .tag-js {
   background-color: #737a05;
 }
 .tag-sql{
   background-color: rgb(0, 0, 0);
+}
+.tag-tensorflow{
+  background-color: rgb(7, 250, 80);
 }
 
 .card-body p {
