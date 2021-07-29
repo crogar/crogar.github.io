@@ -126,9 +126,16 @@ https://codepen.io/eyupucmaz/pen/oNbeXOb */
 }
 .web-links{
   margin-left: 10px;
+  
 }
 .web-links i{
   margin-right: 4px;
+}
+.card-link{
+  text-decoration: none;
+}
+.web-links .card-link-text{
+  color: rgb(128, 128, 128);
 }
 
 @media only screen and (max-width:600px)  {
