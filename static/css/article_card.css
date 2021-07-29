@@ -109,6 +109,7 @@ https://codepen.io/eyupucmaz/pen/oNbeXOb */
 .user {
   display: flex;
   margin-top: auto;
+  justify-content: space-evenly;
 }
 
 .user img {
@@ -122,6 +123,12 @@ https://codepen.io/eyupucmaz/pen/oNbeXOb */
 }
 .user-info small {
   color: #545d7a;
+}
+.web-links{
+  margin-left: 10px;
+}
+.web-links i{
+  margin-right: 4px;
 }
 
 @media only screen and (max-width:600px)  {
