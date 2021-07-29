@@ -84,17 +84,20 @@ https://codepen.io/eyupucmaz/pen/oNbeXOb */
 .tag-teal {
   background-color: #47bcd4;
 }
-.tag-purple {
+.tag-css {
   background-color: #5e76bf;
 }
 .tag-pink {
   background-color: #cd5b9f;
 }
-.tag-yellow {
+.tag-python {
   background-color: #cbd814;
 }
 .tag-js {
   background-color: #737a05;
+}
+.tag-sql{
+  background-color: rgb(0, 0, 0);
 }
 
 .card-body p {
